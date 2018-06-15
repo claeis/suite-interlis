@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RKB.T05b -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+	<TestSuite.Kardinalitaet BID="kard">
+		<TestSuite.Kardinalitaet.I TID="i1">
+			<RolleL REF="l1"/>
+		</TestSuite.Kardinalitaet.I>
+		<TestSuite.Kardinalitaet.L TID="l1"/>
+	</TestSuite.Kardinalitaet>
+  </DATASECTION>
+</TRANSFER>
+<!--
+RolleL ist in Klasse I obligatorisch 
+2 Instanzen von I dürfen auf die gleiche Instanz von L verweisen
+Nicht alle Instanzen von L müssen referenziert werden
+-->

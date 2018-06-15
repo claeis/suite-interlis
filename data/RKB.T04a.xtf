@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RKB.T04a -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+	<TestSuite.Kardinalitaet BID="kard">
+		<TestSuite.Kardinalitaet.G TID="g1"/>
+		<TestSuite.Kardinalitaet.G TID="g2"/>
+		<TestSuite.Kardinalitaet.H TID="h1">
+			<RolleG REF="g1"/>
+		</TestSuite.Kardinalitaet.H>
+		<TestSuite.Kardinalitaet.H TID="h2">
+			<RolleG REF="g1"/>
+		</TestSuite.Kardinalitaet.H>
+	</TestSuite.Kardinalitaet>
+  </DATASECTION>
+</TRANSFER>
+<!--
+RolleG ist in Klasse H obligatorisch 
+2 Instanzen von H dürfen auf die gleiche Instanz von G verweisen
+Nicht alle Instanzen von G müssen referenziert werden
+-->
