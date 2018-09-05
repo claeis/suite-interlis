@@ -1,0 +1,19 @@
+INTERLIS 2.3;
+
+MODEL RoadsExt (en)
+	AT "http://www.kogis.ch"
+	VERSION "2017-07-27" =
+
+  IMPORTS Roads;
+
+  TOPIC RoadsExtended EXTENDS Roads.Roads =
+
+    CLASS StreetAxis (EXTENDED) =
+      Precision: MANDATORY (
+        precise,
+        unprecise);
+    END StreetAxis;
+
+  END RoadsExtended;
+
+END RoadsExt.
