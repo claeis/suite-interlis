@@ -18,6 +18,8 @@ repositories {
 test {
 	// -Pvendor=[iG/Check|ilivalidator]
     systemProperty "vendor", findProperty("vendor")
+	// -Pics=c:\igcheck2\system\bin\ics.exe   # if ics.exe is not on the PATH
+    systemProperty "ics", findProperty("ics")
   //exclude '**/HeaderSectionTest.class'
   //exclude '**/CoordinateAttributeTest.class'
   //exclude '**/AttributeTest.class'
