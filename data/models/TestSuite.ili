@@ -156,10 +156,6 @@ MODEL TestSuite
 	  Abkuerzung : TEXT*12;
 	END GebAdr;
 
-	ASSOCIATION GebAdr2 EXTENDS GebAdr =
-	  Code : TEXT*4;
-	END GebAdr2;
-
     ASSOCIATION GebaeudeDetails =
       Gebaeude (EXTERNAL) -<#> {1} TestSuite.Bodenbedeckung.Gebaeude;
       Detail -- {0..1} GebaeudeDetail;
@@ -207,6 +203,12 @@ MODEL TestSuite
 
 	CLASS I =
 	END I;
+	
+	CLASS Alpha =
+	END Alpha;
+	
+	CLASS Beta =
+	END Beta; 
 
 	ASSOCIATION AB =
 	  RolleA -- {0..1} A;
@@ -239,10 +241,20 @@ MODEL TestSuite
 	  Status : MANDATORY (Bearbeitung, Verifikation, verifiziert);
 	END FG;
 
+ 	ASSOCIATION AlphaBeta =
+	  RolleAlpha -- {0..*} Alpha;
+	  RolleBeta -- {0..*} Beta;
+	  Status : MANDATORY (Bearbeitung, Verifikation, verifiziert);
+	END AlphaBeta;
+	
+	ASSOCIATION AlphaBetaExtended EXTENDS AlphaBeta =
+	  Code : TEXT*4;
+	END AlphaBetaExtended;
+	
 	ASSOCIATION HI =
 	  RolleH -- {0..*} H;
 	  RolleI -- {0..*} I;
-  END HI;
+	END HI;
 
   END Beziehungen;
 
