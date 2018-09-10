@@ -14,8 +14,8 @@ MODEL Roads (en)
     END StreetAxis;
 
     ASSOCIATION StreetAxisAssoc =
-      Street -- {1} Street;
-      StreetAxis -- StreetAxis;
+      Street -- {0..1} Street;
+      StreetAxis -- {0..1} StreetAxis;
     END StreetAxisAssoc;
 	END Roads;
 END Roads.
