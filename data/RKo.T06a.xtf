@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RKo.T06a -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+    <TestSuite.Bodenbedeckung BID="gr">
+		<TestSuite.Bodenbedeckung.GebaeudeArt TID="ga1">
+			<Art>123456</Art>
+		</TestSuite.Bodenbedeckung.GebaeudeArt>
+		<TestSuite.Bodenbedeckung.Gebaeude TID="geb1">
+		   <Status>real</Status>
+		   <Datum>2017-01-01</Datum>
+		   <Art REF="ga1"/>
+		</TestSuite.Bodenbedeckung.Gebaeude>
+	</TestSuite.Bodenbedeckung>
+  </DATASECTION>
+</TRANSFER>

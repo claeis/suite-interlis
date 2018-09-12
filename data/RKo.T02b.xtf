@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RKo.T02b -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+    <TestSuite.Bodenbedeckung BID="a">
+			<TestSuite.Bodenbedeckung.GebaeudeArt TID="ga1">
+				<Art>123456</Art>
+				<Code>
+				   <TestSuite.Bodenbedeckung.Code>
+						<Code>3</Code>
+				   </TestSuite.Bodenbedeckung.Code>
+				</Code>
+			</TestSuite.Bodenbedeckung.GebaeudeArt>
+			<TestSuite.Bodenbedeckung.GebaeudeArt TID="ga2">
+				<Art>123456</Art>
+				<Code>
+				   <TestSuite.Bodenbedeckung.Code>
+						<!-- CONSTRAINT UNIQUE (LOCAL) für "Code" ist nicht verletzt. Code = 3 in unterschiedlichen Objektinstanzen  -->
+						<Code>3</Code>
+				   </TestSuite.Bodenbedeckung.Code>
+				</Code>
+			</TestSuite.Bodenbedeckung.GebaeudeArt>
+		</TestSuite.Bodenbedeckung>
+  </DATASECTION>
+</TRANSFER>
