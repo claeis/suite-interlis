@@ -1,6 +1,7 @@
 package ch.interlis.testsuite;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assume.assumeFalse;
 import org.junit.Ignore;
 import org.junit.BeforeClass;
 import org.junit.Rule;
@@ -22,8 +23,8 @@ public class CardinalityAssociationTest {
     public TestName testName = new TestName();
 
 	@BeforeClass
-	public static void init() {
-		vendor = System.getProperty("vendor", "ilivalidator");
+	 public static void init() {
+	 vendor = System.getProperty("vendor");
 	}
 
 	/**
