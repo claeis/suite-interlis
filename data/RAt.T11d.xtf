@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RAt.T11d -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+    <TestSuite.Bodenbedeckung BID="01">
+		<TestSuite.Bodenbedeckung.GebaeudeArt TID="ga4">
+			<Art>12345</Art>
+			<ArtUUID>c09b1740-5c5a-48ea-b095-938d1c946974</ArtUUID>
+		</TestSuite.Bodenbedeckung.GebaeudeArt>
+	</TestSuite.Bodenbedeckung>
+  </DATASECTION>
+</TRANSFER>
+<!-- 
+ArtUUID muss als XML-Attribut codiert werden.
+INTERLIS Referenzhandbuch Kap. 3.3.11.16
+
+OIDAttributeValue = [ TAG ( %AttributeName%,
+							'OID=' XML-ID )
+					  ETAG ( %AttributeName% ) ]. 
+					  
+<ArtUUID OID="c09b1740-5c5a-48ea-b095-938d1c946974"/>
+-->
+

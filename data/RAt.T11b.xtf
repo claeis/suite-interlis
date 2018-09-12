@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RAt.T11b -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite2" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+    <TestSuite2.Einheiten BID="c09b1740-5c5a-48ea-b095-938d1c946974">
+		<TestSuite2.Einheiten.Gemeinde TID="e3e99bf0-5db5-445c-a375-5ae7dc6acce2">
+			<BFS_Nummer>351</BFS_Nummer>
+			<GdeName>Bern</GdeName>
+			<Kanton>
+				<TestSuite2.Einheiten.KantonRef>
+					<KtNummer>2</KtNummer>
+				</TestSuite2.Einheiten.KantonRef>
+			</Kanton>
+		</TestSuite2.Einheiten.Gemeinde>
+		<!-- Ungültiger UUID im TID -->
+		<TestSuite2.Einheiten.Bezirk TID="a33305d486-cf9b-11e7-abc4-cec278b6b50a">
+			<BFS_Nummer>246</BFS_Nummer>
+			<BezName>Bern-Mittelland</BezName>
+			<Kanton>
+				<TestSuite2.Einheiten.KantonRef>
+					<KtNummer>2</KtNummer>
+				</TestSuite2.Einheiten.KantonRef>
+			</Kanton>
+		</TestSuite2.Einheiten.Bezirk>
+	</TestSuite2.Einheiten>
+  </DATASECTION>
+</TRANSFER>

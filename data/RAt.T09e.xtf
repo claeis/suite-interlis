@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RAt.T09e -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+    <TestSuite.Bodenbedeckung BID="a">
+		<TestSuite.Bodenbedeckung.GebaeudeArt TID="ga4">
+			<Art>12345</Art>
+		</TestSuite.Bodenbedeckung.GebaeudeArt>
+		<TestSuite.Bodenbedeckung.Gebaeude  TID="g10">
+			<Art REF="ga4"></Art>
+		</TestSuite.Bodenbedeckung.Gebaeude>
+		<TestSuite.Bodenbedeckung.Gebaeude TID="g11">
+			<Art REF="ga4"></Art>
+		</TestSuite.Bodenbedeckung.Gebaeude>
+		<TestSuite.Bodenbedeckung.BoFlaechen TID="f1">
+			<!-- Keine Fehlermeldung. 10000.01 wird auf 10000.0 gerundet -->
+			<Flaeche>10000.01</Flaeche>
+		</TestSuite.Bodenbedeckung.BoFlaechen>
+    </TestSuite.Bodenbedeckung>
+  </DATASECTION>
+</TRANSFER>

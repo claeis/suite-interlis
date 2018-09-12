@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RAt.T05a -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+    <TestSuite.Bodenbedeckung BID="a">
+		<TestSuite.Bodenbedeckung.GebaeudeArt TID="ga4">
+			<Art>12345</Art>
+			<!-- Fehlermeldung. URI ist eine Folge von maximal 1023 Buchstaben -->
+			<ArtURI>https://www.interlis.ch/ha5ae96U0KhEQkfVUVfTmKXCExZRFpLRJtiTlCgZ2rgub8St5qb7j4JHbSUn82zXZoCwgye6L9HANMkg6p8DbsJeoQqiJQrWzQ2MapVWjRay4xa9CgCGcRr84hKz7uT4Xp3lLuPtzMy5AgoJZMTzsAPWeqUkQLeIrss1VKkiWTEnjRABRvPKL5Pu5Ul2Rbf9u7Nwx3gkmqnWWVrkDavZc9WmbaY9Kn4LUKaqjBAeTRcZLPgSGHxCkBNYNQLymeDv1VKwV3qwlo7bUDawIk8ASL5sYwrhqlak09bZ10HzBiXHWaFyiTIrma7XbEoaGfXOGHgYnqYVR9AtcDEhEsHw6kK3QFKmVgNM2icAAIOI8iq0VBOJuCCBteAbDBfav6TU9hO5V5riwuWyouPM3qm8aWGGgVjmY8RD9bueTvTz2rH372M8A3JCyuNUJTC5V7A0GDBsZDaD2P3y1J99NFnr7efJOmv2pNHWtyJps3ZDk1s2tasj5zbM6zLGtLQghvtCl6CYb9s0MYyL9JR4EqMiyg2BWsyj6If97x2etjx4iLQuMJVTwD62N8xagl6hinhD6Qh3ItDNZ9MN2qpok6faFP1sWz7FzHQAB5EGNS3XuUQ8BR7qDykfBjiSuDX16SWv1WfPhLiDv6rlJmq15AA3Oo78oV6czP9smp8C3Bo06XHCjsv2GsFsSFb09FqPNEMOGEb6H31cQVID7AefIXCgXnWFlRKtScMUFpPbgOuDQAbrfY4KQOGGlJJwE2uMgOZR3SwbJ6Q9D8RkpxjjpiFHaNLWtxs4OcZYaVGE8WKQCbio2KAAyptzWPlIw2m91cYLOUFiOCK8cUY0GcCGiMfZP5NimRM8cjjRsjrQ0ju6qHU1AlTth8pCDmAzUmRQXVHv5bhmP9hiC32t0VpTPExxbc0Y39OtQTNnmL0UgQp1ta9LaqPwvq1E4QbSWPLwIRSMy0AfHpQhxAtCR1Ek6VI3DzX13Cr1eo84s3Ne8Mkn</ArtURI>
+		</TestSuite.Bodenbedeckung.GebaeudeArt>
+		<TestSuite.Bodenbedeckung.Gebaeude  TID="g10">
+			<Art REF="ga4"></Art>
+		</TestSuite.Bodenbedeckung.Gebaeude>
+		<TestSuite.Bodenbedeckung.Gebaeude TID="g11">
+			<Art REF="ga4"></Art>
+		</TestSuite.Bodenbedeckung.Gebaeude>
+	</TestSuite.Bodenbedeckung>
+  </DATASECTION>
+</TRANSFER>

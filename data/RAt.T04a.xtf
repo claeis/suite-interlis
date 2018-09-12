@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RAt.T04a -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+    <TestSuite.Bodenbedeckung BID="a">
+		<TestSuite.Bodenbedeckung.GebaeudeArt TID="ga4">
+			<Art>12345</Art>
+			<!--ArtNAME is von Typ NAME. Max 255 Buchstaben -->
+			<ArtNAME>AEGvic2KEIOJ5DFuGAOsBQxm7fQqnwsUXIx5Gim29cz4VJ7cyVZhtfUCwoaZ7DtcQAZnna31w5AlCupzcldI9lKk3hQmdhtxCTpmf7ogV5q4E3Lx2DdDzAWXWCDWcluw87MHtWizaxCO85XisG3a7VdeI1nqw2BXrikQrcG00HnZQm35IuJcpE41hbFUiXbs3baVIjn8L350X6H1RPYdPUP0rHdqssnoDX1jgGrSCt7vTf0T8CHLedAIh5t8lYww</ArtNAME>
+		</TestSuite.Bodenbedeckung.GebaeudeArt>
+		<TestSuite.Bodenbedeckung.Gebaeude  TID="g10">
+			<Art REF="ga4"></Art>
+		</TestSuite.Bodenbedeckung.Gebaeude>
+		<TestSuite.Bodenbedeckung.Gebaeude TID="g11">
+			<Art REF="ga4"></Art>
+		</TestSuite.Bodenbedeckung.Gebaeude>
+	</TestSuite.Bodenbedeckung>
+  </DATASECTION>
+</TRANSFER>
+<!-- 
+INTERLIS Referenzhandbuch Kap. 2.2.2
+Ein Name ist definiert als eine Folge von maximal 255 Buchstaben, Ziffern und Unterstrichen, wobei das
+erste Zeichen ein Buchstabe sein muss. Gross- und Kleinbuchstaben werden dabei unterschieden. Namen,
+die mit reservierten Wörtern der Sprache (vgl. Kapitel 2.2.7 Sonderzeichen und reservierte Wörter)
+zusammenfallen, sind unzulässig.
+Syntaxregeln: Name = Letter { Letter | Digit | '_' }. 
+-->
