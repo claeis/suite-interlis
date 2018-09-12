@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RBk.T02a -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+	<TestSuite.Bodenbedeckung BID="bod">
+		<TestSuite.Bodenbedeckung.GebaeudeArt TID="ga4">
+			<Art>12345</Art>
+		</TestSuite.Bodenbedeckung.GebaeudeArt>
+		<TestSuite.Bodenbedeckung.Gebaeude TID="geb1">
+			<Art REF="ga4"></Art>
+		</TestSuite.Bodenbedeckung.Gebaeude>
+	</TestSuite.Bodenbedeckung>
+	
+	<TestSuite.GebaeudeRegister BID="gbr">
+		<TestSuite.GebaeudeRegister.GebaeudeAdresse TID="geba1"/>
+	</TestSuite.GebaeudeRegister>
+	
+	<TestSuite.Beziehungen BID="bez">
+		<TestSuite.Beziehungen.GebAdr>
+			<Gebaeude REF="geb1" BID="bod"/>
+			<Adresse REF="geba1" BID="gbr"/>
+		</TestSuite.Beziehungen.GebAdr>
+    </TestSuite.Beziehungen>
+	
+  </DATASECTION>
+</TRANSFER>
+<!--
+Referenzhandbuch 3.3.9:
+"... wenn die Ziel-Klassen der beinden Rollen in einem anderen Topic definiert sind als die (Basis-
+)Assoziation, kann nicht eingebettet werden."
+-->

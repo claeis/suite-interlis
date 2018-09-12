@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- REB.T01a -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+    <TestSuite.Bodenbedeckung BID="bod">
+		<TestSuite.Bodenbedeckung.GebaeudeArt TID="geba1">
+			<Art>abcdef</Art>
+		</TestSuite.Bodenbedeckung.GebaeudeArt>
+		<TestSuite.Bodenbedeckung.Gebaeude TID="geb1">
+			<Art REF="geba1"/>
+		</TestSuite.Bodenbedeckung.Gebaeude>
+	</TestSuite.Bodenbedeckung>  
+    <TestSuite.Beziehungen BID="a">
+		<TestSuite.Beziehungen.A TID="A1">
+			<!--	<Rolle2 REF="B1"/>	-->
+			<GdeRef>
+			  <TestSuite.Beziehungen.AGebaeude>
+				<Ref REF="geb1" BID="bod"/>
+			  </TestSuite.Beziehungen.AGebaeude>
+			</GdeRef>
+		</TestSuite.Beziehungen.A>
+		<TestSuite.Beziehungen.A TID="A2">
+			<!--	<Rolle2 REF="B2"/>  -->
+			<GdeRef>
+			  <TestSuite.Beziehungen.AGebaeude>
+				<Ref REF="geb1" BID="bod"/>
+			  </TestSuite.Beziehungen.AGebaeude>
+			</GdeRef>
+		</TestSuite.Beziehungen.A>
+		<TestSuite.Beziehungen.B  TID="B1">
+			<Namen>
+			  <TestSuite.Beziehungen.StrName>
+				<Name>Instanz</Name>
+				<Sprache>de</Sprache>
+			  </TestSuite.Beziehungen.StrName>
+		   </Namen>
+			<RolleA REF="A1"/>
+		</TestSuite.Beziehungen.B>
+		<TestSuite.Beziehungen.B TID="B2">
+			<Namen>
+			  <TestSuite.Beziehungen.StrName>
+				<Name>Instanz</Name>
+				<Sprache>de</Sprache>
+			  </TestSuite.Beziehungen.StrName>
+		    </Namen>
+			<RolleA REF="A2"/>
+		</TestSuite.Beziehungen.B>
+    </TestSuite.Beziehungen>
+  </DATASECTION>
+</TRANSFER>
+<!--
+Referenzhandbuch 3.3.9:
+"Falls bei beiden (Basis-)Rollen die maximale Kardinalität kleiner gleich 1 ist, wird bei der Ziel-Klasse der
+zweiten Rolle eingebettet. Wenn diese Ziel-Klasse in einem anderen Topic definiert ist als die (Basis-
+)Assoziation und die Ziel-Klasse der ersten Rolle im selben Topic definiert ist wie die (Basis-)Assoziation,
+wird bei der Ziel-Klasse der ersten Rolle eingebettet ..."
+-->

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RBk.T01b -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+	<TestSuite.GebaeudeRegister BID="gbr">
+		<TestSuite.GebaeudeRegister.GebaeudeAdresse TID="geba1"/>
+	</TestSuite.GebaeudeRegister>
+	<TestSuite.Beziehungen BID="bez">
+		<TestSuite.Beziehungen.D TID="D1"/>
+		<!-- Hier muss mit einer Beziehungsklasse codiert werden -->
+		<TestSuite.Beziehungen.D_GebaeudeAdresse>
+			<RolleD REF="D1"/>
+			<RolleGebaeudeAdresse REF="geba1" BID="gbr"/>
+		</TestSuite.Beziehungen.D_GebaeudeAdresse>
+    </TestSuite.Beziehungen>
+  </DATASECTION>
+</TRANSFER>
+<!--
+Referenzhandbuch 3.3.9:
+"Falls bei einer der beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist, wird bei der Ziel-Klasse
+dieser Rolle eingebettet. 
+Wenn diese Ziel-Klasse in einem anderen Topic definiert ist als die (Basis-)Assoziation, kann nicht eingebettet werden.
+"
+-->

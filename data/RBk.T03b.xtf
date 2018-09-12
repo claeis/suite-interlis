@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RBk.T03b -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+	<TestSuite.Beziehungen BID="bez">
+		<TestSuite.Beziehungen.H TID="h1"/>
+		<!-- Hier kann nicht eigebettet werden -->
+		<TestSuite.Beziehungen.I TID="i1">
+		  <RolleH REF="h1"/>
+		</TestSuite.Beziehungen.I>
+    </TestSuite.Beziehungen>
+  </DATASECTION>
+</TRANSFER>
+<!-- Beziehungen werden immer eingebettet, ausser wenn bei beiden (Basis-)Rollen die maximale Kardinalität grösser 1 ist ... -->

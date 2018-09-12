@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- REB.T02c -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+	<TestSuite.Beziehungen BID="bez">
+		<TestSuite.Beziehungen.F TID="f1"/>
+		<TestSuite.Beziehungen.G TID="g1">
+      <!-- Fehlermeldung. Attribut "Status" in ASSOCIATION FG ist obligatorisch -->
+      <RolleF REF="f1">
+			   <TestSuite.Beziehungen.FG/>
+		  </RolleF>
+		</TestSuite.Beziehungen.G>
+    </TestSuite.Beziehungen>
+  </DATASECTION>
+</TRANSFER>
