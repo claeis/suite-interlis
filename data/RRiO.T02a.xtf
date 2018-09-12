@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RRiO.T02a -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+	<TestSuite.Bodenbedeckung BID="bod">
+		<TestSuite.Bodenbedeckung.Gebaeude2  TID="geb21">
+			<GdeGeschichte>
+			   <TestSuite.Bodenbedeckung.GebaeudeGeschichte>
+			    <Ref REF="gebg1"/>
+			   </TestSuite.Bodenbedeckung.GebaeudeGeschichte>
+			</GdeGeschichte>
+			<istNeubau>false</istNeubau>
+			<stoecke>7</stoecke>
+			<Art REF="geba1"></Art>
+			<Flaeche REF="bf1"/>
+			<Name>Abc</Name>
+		</TestSuite.Bodenbedeckung.Gebaeude2>
+		<TestSuite.Bodenbedeckung.BoFlaechen TID="bf1">
+			<Flaeche>100</Flaeche>
+		</TestSuite.Bodenbedeckung.BoFlaechen>
+		<TestSuite.Bodenbedeckung.GebaeudeArt TID="geba1">
+			<Art>art</Art>
+		</TestSuite.Bodenbedeckung.GebaeudeArt>
+		<TestSuite.Bodenbedeckung.Geschichte TID="gebg1"/>
+	</TestSuite.Bodenbedeckung>	
+  </DATASECTION>
+</TRANSFER>
