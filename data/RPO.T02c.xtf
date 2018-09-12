@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RPO.T02c -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+	<HEADERSECTION VERSION="2.3" SENDER="ili2pg-3.6.0-20161230">
+		<MODELS>
+			<MODEL NAME="TestSuite" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+			<MODEL NAME="TestSuite2" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+		</MODELS>
+	</HEADERSECTION>
+	<DATASECTION>
+		<TestSuite.Bodenbedeckung BID="TestSuite.Bodenbedeckung">
+			<TestSuite.Bodenbedeckung.BoLinien TID="bl8">
+				<!-- Keine Fehlermeldung -->
+				<Form>
+					<POLYLINE>
+						<COORD>
+							<C1>2480110.0</C1>
+							<C2>1060110.0</C2>
+						</COORD>
+						<COORD>
+							<C1>2480110.0</C1>
+							<C2>1060125.0</C2>
+						</COORD>
+						<COORD>
+							<C1>2480110.0</C1>
+							<C2>1060140.0</C2>
+						</COORD>
+						<COORD>
+							<C1>2480120.0</C1>
+							<C2>1060140.0</C2>
+						</COORD>
+						<COORD>
+							<C1>2480110.0</C1>
+							<C2>1060125.0</C2>
+						</COORD>
+						<COORD>
+							<C1>2480100.0</C1>
+							<C2>1060110.0</C2>
+						</COORD>
+					</POLYLINE>
+				</Form>
+			</TestSuite.Bodenbedeckung.BoLinien>
+		</TestSuite.Bodenbedeckung>
+	</DATASECTION>
+</TRANSFER>
+<!-- Selbstüberschneidung und Kurvenstücke mehrmals benutzt. 
+INTERLIS Handbuch S. 49:
+Es kann verlangt werden, dass es sich bei einem Linienzug um einen einfachen Linienzug handelt, d.h.
+anschaulich, dass er sich nicht mit sich selbst schneiden darf und insbesondere mehrfache Benützung
+desselben Kurvenstücks ausgeschlossen ist (Schlüsselwort WITHOUT OVERLAPS).
+-->
