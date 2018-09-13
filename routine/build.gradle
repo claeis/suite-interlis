@@ -20,9 +20,24 @@ test {
   systemProperty "vendor", findProperty("vendor")
   // -Pics=c:\igcheck2\system\bin\ics.exe   # if ics.exe is not on the PATH
   systemProperty "ics",findProperty("ics")?:"ics"
-  //exclude '**/HeaderSectionTest.class'
-  //exclude '**/CoordinateAttributeTest.class'
+  
+  //exclude '**/AssociationTest.class'
   //exclude '**/AttributeTest.class'
+  //exclude '**/CardinalityAssociationTest.class'
+  //exclude '**/CardinalityAttributeTest.class'
+  //exclude '**/CharacterEncodingTest.class'
+  //exclude '**/ClassTest.class'
+  //exclude '**/ConstraintTest.class'
+  //exclude '**/CoordinateAttributeTest.class'
+  //exclude '**/HeaderSectionTest.class'
+  //exclude '**/OrderAttributeTest.class'
+  //exclude '**/OrderObjectTest.class'
+  //exclude '**/PolylineAttributeTest.class'
+  //exclude '**/StructureReferenceAttributeTest.class'
+  //exclude '**/SurfaceAreaAttributeTest.class'
+  //exclude '**/TopicTest.class'
+  //exclude '**/TransferStructureTest.class'
+  //exclude '**/XmlTest.class'
 }
 
 javadoc {

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RTR.T02b -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3"> 
+ <!-- <HEADERSECTION nicht vorhanden -->
+  <DATASECTION>
+	<TestSuite.Bodenbedeckung BID="b1">
+      <TestSuite.Bodenbedeckung.GebaeudeArt TID="ga1">
+        <Art>5</Art>
+      </TestSuite.Bodenbedeckung.GebaeudeArt>
+      <TestSuite.Bodenbedeckung.GebaeudeArt TID="ga2">
+        <Art>123456</Art>
+      </TestSuite.Bodenbedeckung.GebaeudeArt>
+      <TestSuite.Bodenbedeckung.GebaeudeArt TID="ga3">
+        <Art>5</Art>
+        <Beschreibung>Art5</Beschreibung>
+      </TestSuite.Bodenbedeckung.GebaeudeArt>
+      <TestSuite.Bodenbedeckung.BoFlaechen TID="f1">
+        <Flaeche>5</Flaeche>
+      </TestSuite.Bodenbedeckung.BoFlaechen>
+      <TestSuite.Bodenbedeckung.BoFlaechen TID="f2">
+        <Art>Gebaeude.privat</Art>
+      </TestSuite.Bodenbedeckung.BoFlaechen>
+    </TestSuite.Bodenbedeckung>
+  </DATASECTION>
+</TRANSFER>

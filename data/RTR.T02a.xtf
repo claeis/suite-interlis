@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RTR.T02a -->
+<!-- TRANSFER nicht vorhanden -->
+  <HEADERSECTION SENDER="ili2c-4.5.22-20160520" VERSION="2.3">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+	<TestSuite.Bodenbedeckung BID="b1">
+      <TestSuite.Bodenbedeckung.GebaeudeArt TID="ga1">
+        <Art>5</Art>
+      </TestSuite.Bodenbedeckung.GebaeudeArt>
+      <TestSuite.Bodenbedeckung.GebaeudeArt TID="ga2">
+        <Art>123456</Art>
+      </TestSuite.Bodenbedeckung.GebaeudeArt>
+      <TestSuite.Bodenbedeckung.GebaeudeArt TID="ga3">
+        <Art>5</Art>
+        <Beschreibung>Art5</Beschreibung>
+      </TestSuite.Bodenbedeckung.GebaeudeArt>
+      <TestSuite.Bodenbedeckung.BoFlaechen TID="f1">
+        <Flaeche>5</Flaeche>
+      </TestSuite.Bodenbedeckung.BoFlaechen>
+      <TestSuite.Bodenbedeckung.BoFlaechen TID="f2">
+        <Art>Gebaeude.privat</Art>
+      </TestSuite.Bodenbedeckung.BoFlaechen>
+    </TestSuite.Bodenbedeckung>
+  </DATASECTION>
