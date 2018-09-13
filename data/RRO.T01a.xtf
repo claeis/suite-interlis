@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RRO.T01a -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ili2c-4.5.22-20160520">
+    <MODELS>
+      <MODEL NAME="TestSuite" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+	  <MODEL NAME="TestSuite2" VERSION="2017-07-27" URI="http://www.kogis.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+	<TestSuite.Bodenbedeckung BID="a">
+		<TestSuite.Bodenbedeckung.GebaeudeArt TID="ga4">
+			<Art>art</Art>
+		</TestSuite.Bodenbedeckung.GebaeudeArt>
+		<TestSuite.Bodenbedeckung.Gebaeude  TID="g10">
+			<Art REF="ga4"></Art>
+		</TestSuite.Bodenbedeckung.Gebaeude>
+		<TestSuite.Bodenbedeckung.BoFlaechen TID="bf100">
+			<Flaeche>100</Flaeche>
+		</TestSuite.Bodenbedeckung.BoFlaechen>
+	</TestSuite.Bodenbedeckung>	
+	<TestSuite2.Einheiten BID="dcfb2286-20ac-4813-9bc3-cd73729659ea">
+		<TestSuite2.Einheiten.Gemeinde TID="d84c07d0-c15e-4462-b27f-cf90385bee9c">
+			<BFS_Nummer>351</BFS_Nummer>
+			<GdeName>Bern</GdeName>
+			<Kanton>
+				<TestSuite2.Einheiten.KantonRef>
+					<KtNummer>2</KtNummer>
+				</TestSuite2.Einheiten.KantonRef>
+			</Kanton>
+		</TestSuite2.Einheiten.Gemeinde>
+	</TestSuite2.Einheiten>
+  </DATASECTION>
+</TRANSFER>

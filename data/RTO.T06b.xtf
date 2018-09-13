@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RTR.T06b -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="KOGIS">
+    <MODELS>
+      <MODEL NAME="Roads" URI="http://www.kogis.ch" VERSION="2017-07-27"/>
+      <MODEL NAME="RoadsExt" URI="http://www.kogis.ch" VERSION="2017-07-27"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+    <!-- Keine Fehlermeldung. Kann mit 1 oder 2 Basktes transferiert werden -->
+	<Roads.Roads BID="REFHANDB00000002">
+	<!-- === Street === -->
+      <Roads.Roads.Street TID="1">
+        <Name>Austrasse</Name>
+      </Roads.Roads.Street>
+	</Roads.Roads>
+	<RoadsExt.RoadsExtended BID="REFHANDB00000001">
+	  <!-- === StreetAxis / StreetAxisAssoc === -->
+      <RoadsExt.RoadsExtended.StreetAxis TID="8">
+        <Precision>precise</Precision>
+      </RoadsExt.RoadsExtended.StreetAxis>
+	</RoadsExt.RoadsExtended>
+    <!-- end of basket REFHANDB00000001 -->
+  </DATASECTION>
+</TRANSFER>
