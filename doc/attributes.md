@@ -187,7 +187,7 @@
 |**Bezeichnung**|```POLYLINE```: **Linienzug**
 |**Beschreibung**|Der Test muss die Validität eines Linienzugs prüfen
 |**Testvoraussetzung**|[RPO.T01a.xtf](../data/RPO.T01a.xtf)
-|**Beispiel**|<p align="center"><img src="img/rpo.t01.png" height="384" title="RPO.T01"><br/>```POLYLINE WITH (STRAIGHTS, ARCS) VERTEX LKoord;```
+|**Beispiel**|<p align="center"><img src="https://raw.githubusercontent.com/geoadmin/suite-interlis/master/doc/img/rpo.t01.png" height="384" title="RPO.T01"><br/>```POLYLINE WITH (STRAIGHTS, ARCS) VERTEX LKoord;```
 |**Erwartetes Ergebnis**|<ul><li>RPO.T01a.xtf: keine Fehlermeldung</li></ul>
 |**Referenz**|[[1]] Kap. 2.8.12 und 3.3.11.12
 
