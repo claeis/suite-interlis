@@ -375,7 +375,7 @@
 |:--|:--
 |**Bezeichnung**|```BAG OF```
 |**Beschreibung**|Die Tests müssen die Regeln für die Kardinalität der Attribute prüfen.
-|**Testvoraussetzung**|[RKA.T02a.xtf](../data/RKA.T02a.xtf), [RKA.T02b.xtf](../data/RKA.T02b.xtf), [RKA.T02c.xtf](../data/RKA.T02c.xtf), [RKA.T02d.xtf](../data/RKA.T02d.xtf) RKA.T02c.xtf
+|**Testvoraussetzung**|[RKA.T02a.xtf](../data/RKA.T02a.xtf), [RKA.T02b.xtf](../data/RKA.T02b.xtf), [RKA.T02c.xtf](../data/RKA.T02c.xtf), [RKA.T02d.xtf](../data/RKA.T02d.xtf)
 |**Erwartetes Ergebnis**|<ul><li>RKA.T02a.xtf: keine Fehlermeldung</li><li>RKA.T02b.xtf: Fehlermeldung. Fehlendes obligatorisches Attribut</li><li>RKA.T02c.xtf: Fehlermeldung. Die Struktur darf nicht mehr als zweimal vorkommen</li><li>RKA.T02d.xtf: Fehlermeldung: falsche Codierung (mehrere Tags ```Namen```)</li></ul>
 |**Referenz**|[[1]] Kap. 2.6.1 und 2.7.3
 
